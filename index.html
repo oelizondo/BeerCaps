@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='fModule'>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='bower_components/angular/angular.js'></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bower_components/materialize/bin/materialize.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller='FirstCtrl'>
+  <nav>
+    <div class="nav-wrapper green darken-4">
+      <a href="#" class="brand-logo">BeerCap</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">About</a></li>
+        <li><a href="components.html">Help</a></li>
+        <li><a href="javascript.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+	<div class="background">
+		<div class="container col s12 flex">
+			<h2 class="center-align white-text border">{{presentacion}}</h2>
+		</div>	
+		<div class="container col s12 centrar">
+			<h2 class="white-text">BeerCaps</h2>
+			<a class="waves-effect waves-light btn-large  green darken-3 margin">Descargar</a>
+			<a class="waves-effect waves-light btn-large  green darken-3 margin">Acerca</a>
+		</div>
+	</div>
+	<div class="container window">
+	    <div>
+	     <h1 class="claro green-text"> Test </h1>
+	   	 <p class="claro green-text darken 1">{{title}}</p>
+	    </div>
+    </div>
+	<script src='app.js'></script>
+</body>
+</html>
