@@ -2,6 +2,7 @@
 <html lang="en" ng-app='fModule'>
 <head>
 	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<script src='bower_components/angular/angular.js'></script>
 	<link rel="stylesheet" href="style.css">
@@ -9,8 +10,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller='FirstCtrl'>
-  <nav>
-    <div class="nav-wrapper green darken-4">
+  <!--<nav>
+    <div class="nav-wrapper green darken-3">
       <a href="#" class="brand-logo">BeerCap</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">About</a></li>
@@ -18,23 +19,29 @@
         <li><a href="javascript.html">Contact</a></li>
       </ul>
     </div>
-  </nav>
-	<div class="background">
+  </nav>-->
+	<div class="background flex">
 		<div class="container col s12 flex">
-			<h2 class="center-align white-text border">{{presentacion}}</h2>
+			<h1 class="center-align white-text">Beer Caps</h1>
+			<h3 class="center-align white-text">{{presentacion}}</h3>
 		</div>	
 		<div class="container col s12 centrar">
-			<h2 class="white-text">BeerCaps</h2>
-			<a class="waves-effect waves-light btn-large  green darken-3 margin">Descargar</a>
-			<a class="waves-effect waves-light btn-large  green darken-3 margin">Acerca</a>
+			<a class="waves-effect waves-light btn-large  green darken-4 margin">Acerca</a>
+			<a class="waves-effect waves-light btn-large  green darken-4 margin">Descargar</a>
 		</div>
 	</div>
 	<div class="container window">
-	    <div>
-	     <h1 class="claro green-text"> Test </h1>
-	   	 <p class="claro green-text darken 1">{{title}}</p>
+		<div class="row borderbox">
+	    <div class="col l6 m6 s12">
+		     <h1 class="claro green-text"> Acerca </h1>
+		   	 <p class="claro green-text darken 1 fontsize">Beer Caps es la aplicación perfecta para coleccionar las cervezas que has probado.</p>
+		   	 <p class="claro green-text darken 1 fontsize">Es tan sencillo como darle tap a tu pantalla y tener la marca deseada guardada en tu teléfono.</p>
 	    </div>
-    </div>
+		  <div class="col l6 m6 s12">
+		    	<img src="iphone.png" alt="" class="responsive-img" id="phone">
+		  </div>
+	   </div>
+  </div>
 	<script src='app.js'></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ body
 	background-color: #fff;
 	display: flex;
 	flex-wrap: wrap;
+	font-weight: 100;
 }
 .claro
 {
@@ -18,8 +19,14 @@ body
 .flex
 {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	align-items; center;
+	flow-direction: column;
+	align-items: center;
+}
+.fontsize
+{
+	font-size: 25px;
 }
 .border
 {
@@ -30,21 +37,16 @@ body
 	margin: 0 auto;
 	font-size: 35px;
 	letter-spacing: 0.1em;
-	margin: 50px 10px
+	margin: 50px 10px;
+	font-weight: bold;
 }
 .background
 {
 	width: 100%;
-	min-height: 95vh;
-	background: #b4ddb4; /* Old browsers */
-	background: #b4ddb4; /* Old browsers */
-	background: -moz-linear-gradient(45deg,  #b4ddb4 0%, #83c783 1%, #52b152 1%, #008a00 2%, #005700 41%, #002400 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#b4ddb4), color-stop(1%,#83c783), color-stop(1%,#52b152), color-stop(2%,#008a00), color-stop(41%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(45deg,  #b4ddb4 0%,#83c783 1%,#52b152 1%,#008a00 2%,#005700 41%,#002400 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(45deg,  #b4ddb4 0%,#83c783 1%,#52b152 1%,#008a00 2%,#005700 41%,#002400 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(45deg,  #b4ddb4 0%,#83c783 1%,#52b152 1%,#008a00 2%,#005700 41%,#002400 100%); /* IE10+ */
-	background: linear-gradient(45deg,  #b4ddb4 0%,#83c783 1%,#52b152 1%,#008a00 2%,#005700 41%,#002400 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	min-height: 100vh;
+	background-image: url('bubbles.jpg');
+	background-size: cover;
+	background-position: center;
 }
 .window
 {
@@ -57,4 +59,33 @@ body
 .margin
 {
 	margin: 20px;
+}
+.borderbox
+{
+	box-sizing: border-box;
+	padding: 40px;
+}
+@media screen and (max-width: 475px)
+{
+	.border
+	{
+		border: 2px solid white;
+		max-width: 500px;
+		box-sizing: border-box;
+		margin: 0 auto;
+		font-size: 25px;
+		margin: 10px 10px
+	}
+
+	#phone
+	{
+		width: 100%;
+		height: auto;
+	}
+	.fontsize
+	{
+		font-size: 25px;
+		text-align: center;
+	}
+
 }
