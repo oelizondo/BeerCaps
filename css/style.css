@@ -66,6 +66,10 @@ hr
 	background-size: cover;
 	background-position: center;
 }
+.auto
+{
+	justify-content: center;
+}
 .window
 {
 	min-height: 70vh;

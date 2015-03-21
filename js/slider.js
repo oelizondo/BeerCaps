@@ -1,1 +1,3 @@
-slider.js
+$(document).ready(function(){
+	$('.modal-trigger').leanModal();
+});
