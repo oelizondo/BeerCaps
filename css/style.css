@@ -80,7 +80,7 @@ hr
 }
 .section
 {
-	min-height: 70vh;
+	height: auto;
 	width: 100%;
 
 }
