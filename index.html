@@ -10,6 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="bower_components/normalize/normalize.js">
 	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body ng-controller='FirstCtrl'>
   <!--<nav>
@@ -24,13 +25,13 @@
   </nav>-->
 	<div class="background flex">
 		<div class="container col s12">
-			<h1 class="center-align white-text">Beer Caps</h1>
-			<h3 class="center-align white-text">{{presentacion}}</h3>
+			<h1 class="center-align white-text animated fadeInDown">Beer Caps</h1>
+			<h3 class="center-align white-text animated fadeInDown">{{presentacion}}</h3>
 		</div>
-		<div class="container centrar col l12 m12 s12 ">
+		<div class="container centrar col l12 m12 s12 animated fadeInDown ">
 			<img src="images/logo.png" alt="" class="responsive-img imgportada">
 		</div>	
-		<div class="container col s12 centrar">
+		<div class="container col s12 centrar animated fadeInDown">
 			<a href="#" class="waves-effect waves-light btn-large  green darken-4 margin">Acerca</a>
 			<a href="#" class="waves-effect waves-light btn-large  green darken-4 margin">Descargar</a>
 		</div>
@@ -38,33 +39,33 @@
 	<div class="container window">
 		<div class="row borderbox">
 	    <div class="col l6 m6 s12">
-		     <h3 class="claro green-text big"> Qué es </h3>
-		   	 <p class="claro green-text darken 1 fontsize">Beer Caps es la aplicación perfecta para coleccionar las cervezas que has probado.</p>
-		   	 <p class="claro green-text darken 1 fontsize">Es tan sencillo como darle tap a tu pantalla y tener la marca deseada guardada en tu teléfono.</p>
+		     <h3 class="claro green-text big  wow fadeInDown"> Qué es </h3>
+		   	 <p class="claro green-text darken 1 fontsize  wow fadeInDown">Beer Caps es la aplicación perfecta para coleccionar las cervezas que has probado.</p>
+		   	 <p class="claro green-text darken 1 fontsize  wow fadeInDown">Es tan sencillo como darle tap a tu pantalla y tener la marca deseada guardada en tu teléfono.</p>
 	    </div>
 		  <div class="col l6 m6 s12">
-		    	<img src="images/iphone.png" alt="" class="responsive-img" id="phone">
+		    	<img src="images/iphone.png" alt="" class="responsive-img wow fadeInDown" id="phone">
 		  </div>
 	   </div>
 	   <hr>
 	   <div class="row borderbox">
 		   <div class="col l12 s12 m12">
 		   	<div class="col l12 m12 s12">
-		   		<h3 class="claro green-text big">Cómo funciona</h3>
-		   		<p class="claro green-text darken 1 fontsize">
+		   		<h3 class="claro green-text big wow fadeInDown">Cómo funciona</h3>
+		   		<p class="claro green-text darken 1 fontsize wow fadeInDown">
 		   			Crea tu propia colección de cervezas. </p>
-		   			<p class="claro green-text darken 1 fontsize">Beer Caps te permite coleccionar y compartir todas las cervezas dentro de tu apliación.</p>
-		   			<p class="claro green-text darken 1 fontsize">Compártelas con twitter y facebook</p>
+		   			<p class="claro green-text darken 1 fontsize wow fadeInDown">Beer Caps te permite coleccionar y compartir todas las cervezas dentro de tu apliación.</p>
+		   			<p class="claro green-text darken 1 fontsize wow fadeInDown">Compártelas con twitter y facebook</p>
 		   		</p>
 		   	</div>
 		   	<div class="col l12 m12 s12">
-		   		<img src="images/fondo.png" alt="" class="responsive-img auto">
+		   		<img src="images/fondo.png" alt="" class="responsive-img auto wow fadeInDown">
 		   	</div>
 		   </div>
 		</div>
   </div>
   <div class="section green darken-4">
-  	<div class="col l12 s12 m12">
+  	<div class="col l12 s12 m12 wow fadeInDown">
   		<h2 class="white-text claro centrar margin big">Quiénes somos</h2>
   		<h3 class=	"white-text claro centrar margin medium">los desarrolladores</h3>
   		<br>
@@ -78,7 +79,7 @@
   </div>
   <div class="container window flex">
   	<div class="row">
-  		<div class="col s12 m12 l12">
+  		<div class="col s12 m12 l12 wow fadeInDown">
   			<h3 class="center-align green-text claro margin big">Descarga BeerCaps ahora 	</h3>
   			<br>
   			<h4 class="center-align green-text medium">
@@ -86,12 +87,15 @@
   			</h4>
   			<br>
   			<div class="col s12 m12 l12">
-  				<img src="images/AppStoreLogo.jpg" alt="" class="responsive-img imgportada" id="store">
+  				<img src="images/AppStoreLogo.jpg" alt="" class="responsive-img imgportada auto">
   			</div>
   		</div>
   	</div>
   </div>
 	<script src='js/app.js'></script>
-	<script src="js/slider.js"></script>
+	<script src="bower_components/wow/dist/wow.js"></script>
+		<script>
+	 		new WOW().init();
+	</script>
 </body>
 </html>
