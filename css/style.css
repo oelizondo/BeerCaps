@@ -68,7 +68,7 @@ hr
 }
 .auto
 {
-	justify-content: center;
+	margin: 0 auto;
 }
 .window
 {
@@ -80,7 +80,7 @@ hr
 }
 .section
 {
-	height: 70vh;
+	min-height: 70vh;
 	width: 100%;
 
 }
@@ -92,6 +92,14 @@ hr
 {
 	box-sizing: border-box;
 	padding: 40px;
+}
+.round
+{
+	border-radius: 50%;
+}
+#store
+{
+	margin: 0 auto;
 }
 @media screen and (max-width: 475px)
 {
